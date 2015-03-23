@@ -1,0 +1,46 @@
+#main_wrap{
+	width: 100%;
+	height:721px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background: url(../images/common_bg.jpg) no-repeat center center;
+}
+#main_wrap .log-box{width:460px;margin:0 auto;padding-top: 175px;}
+#main_wrap .log-box .log-block{width:400px;padding-left: 60px;height:58px;margin-top: 42px;border-radius: 40px;position: relative;}
+#main_wrap .log-box .log-block.user{background: url(../images/login-icon.png) no-repeat 20px 13px #fff;}
+#main_wrap .log-box .log-block.password{background: url(../images/login-icon.png) no-repeat 20px -85px #fff;}
+#main_wrap .log-box .log-block input{border:0;width:370px;background-color: #fff;color:#666;font-size: 20px;line-height: 28px;padding:15px 0;}
+#main_wrap .log-box .log-block .tips{position: absolute;left:100%;top:50%;white-space: nowrap;background-color: #fff;margin-left: 20px;height:34px;line-height: 34px;margin-top: -17px;font-size: 12px;color:#666;padding:0 10px;display: none;}
+#main_wrap .log-box .log-block .tips::after{content:'';position: absolute;left:-10px;top:12px;display: block;height:0;width:0;border-style:dashed solid dashed dashed;border-color:transparent #fff transparent transparent;border-width:5px;}
+#main_wrap .log-box .log-block .error-info{position: absolute;top:-32px;left:32px;height:28px;line-height:28px;border:1px solid #086d97;color:#513232;padding-left: 30px;background: url(../images/form-error-icon.png) no-repeat 7px 6px #f9f5c6;width:367px;font-size: 12px;}
+#main_wrap .title{font-size: 36px;color:#fff;text-align: center;font-weight: normal;}
+#main_wrap .forget-password{text-align: right;padding-right: 22px;color:#fff;padding-top: 22px;font-size: 16px;}
+#main_wrap .forget-password a{color:#fff;}
+#main_wrap .submit-box{width:258px;margin:28px auto 0 auto;}
+#main_wrap .login-btn{
+	width:256px;
+	height:64px;
+	border:1px solid #4398b8;
+	font-size: 24px;
+	color:#fff;
+	text-align: center;
+	background: -webkit-linear-gradient( top, #98d43d, #7fb62d, #98d43d );
+	background: -moz-linear-gradient( top, #98d43d, #7fb62d, #98d43d );
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0px 1px 0px #a5c6c4;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+#main_wrap .login-btn:active{
+	box-shadow: 0px 0px 0px #a5c6c4;
+}
+#main_wrap .login-btn:hover{
+	background: -webkit-linear-gradient( top, #ff9d3c, #ff7f01, #ff9d3c );
+	background: -moz-linear-gradient( top, #ff9d3c, #ff7f01, #ff9d3c );
+}
+#main_wrap .no-account{text-align: center;color:#fff;margin-top: 23px;font-size: 16px;}
+#main_wrap .no-account a{color: #fff}

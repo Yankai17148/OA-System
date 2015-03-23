@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>OA首页</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['首页', '功能优势', '客户案例', '安全保障','联系我们'],
+				"css3":true,
+				afterRender: function(){
+					$("#page1 h1").addClass('active');
+				},
+				afterLoad: function(anchorLink, index){
+					if (index == 2) {
+						$("#page2 h1").addClass('active');
+					};
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	
+	<div id="fullpage">
+		<div class="section" id="page1">
+			<header>
+				<div class="container clearfix">
+					<div id="logo">
+						<a href=""><img src="images/logo.gif" alt=""></a>
+					</div>
+					<div class="top_nav">
+						<span>热线电话：<em>0354-3237474 </em></span>
+						<a href="" class="top_btn orange">免费注册</a>
+						<a href="" class="top_btn blue">登录</a>
+						<a href="" class="top_btn green">在线体验</a>
+					</div>
+				</div>
+			</header>
+			<div class="container page1-wrap">
+				<h1 class="oa-big-title">骑士OA系统</h1>
+				<p class="oa-content-txt">帮你梳理所有要做的事，随时记录、实时跟踪、适时计划，给大脑减轻负担让你轻装上阵，专注眼前、忙而不乱</p>
+			</div>
+		</div>
+		<div class="section" id="page2">Some section<h1>222</h1></div>
+		<div class="section" id="page3">Some section</div>
+		<div class="section" id="page4">Some section</div>
+		<div class="section" id="page5">Some section</div>
+	</div>
+</body>
+</html>
