@@ -12,19 +12,9 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'ft';
-  src: url('../fonts/FZJT.eot');/*IE9 Compat Modes*/
-  src:
-    url('../fonts/FZJT.eot?#font-spider') format('embedded-opentype'),
-    url('../fonts/FZJT.woff') format('woff'),
-    url('../fonts/FZJT.ttf') format('truetype'),
-    url('../fonts/FZJT.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
 
-}
-body{font-size: 12px;}
+
+body{font-size: 12px;font-family: Arial, Helvetica, "STHeiTi", "Microsoft Yahei", sans-serif;}
 h1, h2, h3, h4, h5, h6, p{margin:0;padding:0;font-weight: normal;}
 ul, ol, li{margin:0;padding:0;list-style: none;}
 input, button, textarea{outline: none;}
@@ -63,6 +53,7 @@ header .top_nav .top_btn.green{background-color: #8ec43c;}
 header .top_nav .top_btn.green:hover{background-color: #80c21d;}
 
 footer{width:100%;background-color: #3a3a3a;color:#fff;}
+footer a:hover{text-decoration: underline;}
 footer .footer-wrap{padding-top: 30px;}
 footer .coptright{font-size: 14px;color:#757575;line-height: 50px;height:50px;text-align: center;}
 footer .footer-wrap .footer-box{float: left;min-height:130px;}

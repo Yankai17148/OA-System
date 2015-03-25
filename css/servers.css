@@ -1,0 +1,78 @@
+/*服务条款*/
+.servers-banner{width: 100%;height:412px;background: url(../images/servers-banner.jpg) no-repeat top center;}
+.servers-banner .server-banner-txt h2,
+.servers-banner .server-banner-txt p{padding-left:102px;}
+.servers-banner .server-banner-txt h2{
+	padding-top: 155px;
+	font-size: 36px;
+	color: #3d84b8;
+	margin-bottom:20px;
+	opacity: 0;
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-o-transform: translateY(-20px);
+	transform: translateY(-20px);
+	-webkit-transition: all .3s .3s;
+	-moz-transition: all .3s .3s;
+	-ms-transition: all .3s .3s;
+	-o-transition: all .3s .3s;
+	transition: all .3s .3s;
+}
+.servers-banner .server-banner-txt h2.active{
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);
+}
+.servers-banner .server-banner-txt p{
+	font-size: 22px;
+	color: #666;
+	opacity: 0;
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-o-transform: translateY(-20px);
+	transform: translateY(-20px);
+	-webkit-transition: all .3s .6s;
+	-moz-transition: all .3s .6s;
+	-ms-transition: all .3s .6s;
+	-o-transition: all .3s .6s;
+	transition: all .3s .6s;
+}
+.servers-banner .server-banner-txt p.active{
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);
+}
+#servers-menu{width:1200px;margin:0 auto;padding-top: 20px;line-height: 40px;border-bottom: 1px solid #dbdbdb;position: relative;}
+#servers-menu .has-active-block{width: 48px;height: 2px;background: #3d84b8;position: absolute;bottom: -1px;left: 0;z-index: 99;}
+#servers-menu li{float: left;}
+#servers-menu li a{display: block;font-size: 18px;color: #333;padding:0 40px;}
+.server-save-wrap{width: 100%;}
+.server-save-wrap .server-save-item{width: 100%;height:400px;padding-top: 120px;}
+.server-save-wrap .server-save-item.odd{background-color: #f5f5f5;}
+.server-save-wrap .server-save-item .save-item-box{width:950px;margin:0 auto;}
+.save-item-box .computer-left{position: relative;float: left;width:440px;height:328px;background: url(../images/srceen.png) no-repeat top center;}
+.save-item-box .computer-right{position: relative;float: right;width:440px;height:328px;background: url(../images/srceen.png) no-repeat top center;}
+.save-item-box .computer-left img,
+.save-item-box .computer-right img{position: absolute;top:16px;left:16px;width:408px;height:230px;}
+.save-item-box .save-right-txt{float: left;padding-left: 165px;width:270px;color: #333;}
+.save-item-box .save-left-txt{float: left;padding-left: 80px;width:280px;color:#333;}
+.save-item-box .save-right-txt h4,
+.save-item-box .save-left-txt h4{font-size: 30px;padding-top: 46px;margin-bottom: 25px;}
+.save-item-box .save-right-txt p,
+.save-item-box .save-left-txt p{font-size: 16px;line-height: 26px;}
+.buy-box{width:257px;margin:0 auto;padding:100px 0;}
+.buy-box .buy-btn{display: block;width:257px;height:64px;text-align:center;line-height: 64px;font-size: 24px;color:#fff;background-color: #ff9556;border-radius: 5px;box-shadow: 0px 4px 0px #e5671c;position: relative;top:0;-webkit-transition: all .2s;
+-moz-transition: all .2s;
+-ms-transition: all .2s;
+-o-transition: all .2s;
+transition: all .2s;}
+.buy-box .buy-btn:active{top:4px;box-shadow: 0px 0px 0px #e5671c;}
+.buy-box .buy-btn:hover{background-color: #ff8035;}
