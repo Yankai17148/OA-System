@@ -61,7 +61,7 @@
 .save-item-box .computer-left{position: relative;float: left;width:440px;height:328px;background: url(../images/srceen.png) no-repeat top center;}
 .save-item-box .computer-right{position: relative;float: right;width:440px;height:328px;background: url(../images/srceen.png) no-repeat top center;}
 .save-item-box .computer-left img,
-.save-item-box .computer-right img{position: absolute;top:16px;left:16px;width:408px;height:230px;}
+.save-item-box .computer-right img{position: absolute;top:16px;left:15px;width:409px;height:230px;}
 .save-item-box .save-right-txt{float: left;padding-left: 165px;width:270px;color: #333;}
 .save-item-box .save-left-txt{float: left;padding-left: 80px;width:280px;color:#333;}
 .save-item-box .save-right-txt h4,
@@ -76,3 +76,87 @@
 transition: all .2s;}
 .buy-box .buy-btn:active{top:4px;box-shadow: 0px 0px 0px #e5671c;}
 .buy-box .buy-btn:hover{background-color: #ff8035;}
+
+/*用户数*/
+.user-text{margin:48px 0 35px 0;height:44px;line-height: 44px;font-size: 30px;color: #666;}
+.user-text span{padding:0 16px;margin:0 30px 0 5px;background-color: #3d84b8;color: #fff;display: inline-block;border-radius: 20px;}
+.user-price{}
+.user-price .price-row{margin-bottom: 50px;}
+.user-price .price-row .price-box{float: left;margin-right: 40px;padding:15px;border:1px solid #9ec1db;border-left: 5px solid #3d84b8;min-width: 205px;position: relative;}
+.price-box h3{font-size: 20px;color: #3d84b8;}
+.price-box ul{margin:5px 0 10px 0;}
+.price-box ul li{line-height: 26px;font-size: 12px;color: #666}
+.price-box .price{font-size: 28px;color: #ff9556;}
+.price-box .free{
+	position: absolute;
+	top:20px;
+	right:15px;
+	height:26px;
+	line-height: 26px;
+	padding:0 5px;
+	border:2px solid #ff6868;
+	color: #ff6868;
+	font-family: "SimSun";
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 3px;
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+.price-box .user-bao{font-size: 20px;color: #ff6d6c;}
+.price-box .user-bao-price{font-size: 28px;color: #ff6d6c;margin:10px 0;}
+.price-box .user-bao-txt{font-size: 12px;color: #ff6d6c;}
+
+/*安全*/
+.security-banner{width: 100%;height:413px;background: url(../images/security-banner.jpg) no-repeat top center #fff;}
+.security-banner h2,
+.security-banner p{padding-left: 78px;color:#666;}
+.security-banner h2{
+	padding-top: 165px;
+	font-size: 34px;
+	opacity: 0;
+	-webkit-transition: all .3s .3s;
+	-moz-transition: all .3s .3s;
+	-ms-transition: all .3s .3s;
+	-o-transition: all .3s .3s;
+	transition: all .3s .3s;
+}
+.security-banner h2.active{opacity: 1;}
+.security-banner p{
+	font-size: 14px;
+	margin-top: 20px;
+	opacity: 0;
+	-webkit-transform: scale(.7);
+	-moz-transform: scale(.7);
+	-ms-transform: scale(.7);
+	-o-transform: scale(.7);
+	transform: scale(.7);
+	-webkit-transition: all .3s .6s;
+	-moz-transition: all .3s .6s;
+	-ms-transition: all .3s .6s;
+	-o-transition: all .3s .6s;
+	transition: all .3s .6s;
+}
+.security-banner p.active{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.security-wrap{}
+.security-wrap .security-item{width: 100%;height:400px;}
+.security-wrap .security-item.odd{background-color: #f5f5f5;}
+.security-wrap .security-item .s-container{width:900px;margin:0 auto;padding-top: 113px;}
+.s-container .s-icon-box{float: left;width:180px;padding-top: 114px;text-align: center;color: #3d84b8;background-image: url(../images/security-icon.png);background-repeat: no-repeat;}
+.s-container .s-icon-box.s-icon1{background-position: 40px 0px;}
+.s-container .s-icon-box.s-icon2{background-position: -213px 0px;}
+.s-container .s-icon-box.s-icon3{background-position: -467px 0px;}
+.s-container .s-icon-box.s-icon4{background-position: -724px 0px;}
+.s-container .s-icon-box h4{font-size: 22px;margin-bottom: 15px;}
+.s-container .s-icon-box p{font-size: 16px;}
+.s-container .s-text{padding-left: 65px;float: left;width:655px;padding-top: 25px;font-size: 14px;color:#666;line-height: 24px;}

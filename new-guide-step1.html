@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>引导第一步</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/ui-dialog.css">
+	<link rel="stylesheet" href="css/activation.css">
+	
+	
+</head>
+<body>
+	<div id="guide-step1">
+		<div class="step1-txt">
+			您正在使用“管理员账号”登录，为了让您的同事们也能顺利的登录。建议您现在进行快速初始化，包括：添加部门、邀请员工等。
+		</div>
+		<div class="step1-control clearfix">
+			<a href="" class="comfirm-no f-left">不，我想先进入系统</a>
+			<div class="f-left"><a href="javascript:;" class="guide-btn">快速初始化</a></div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/dialog-min.js"></script>
+	<script>
+		$(function() {
+			dialog({
+				title: "",
+				content: $("#guide-step1")
+			}).showModal();
+		});
+	</script>
+</body>
+</html>

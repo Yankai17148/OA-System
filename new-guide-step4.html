@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>引导成功</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/ui-dialog.css">
+	<link rel="stylesheet" href="css/activation.css">
+	
+	
+</head>
+<body>
+	<div class="guide-step-wrap">
+		<div class="step-bar clearfix">
+			<div class="step-item f-left"><span>1.创建部门</span><i class="right-arrow"></i></div>
+			<div class="step-item f-left"><i class="left-arrow"></i><span>2.邀请同事</span><i class="right-arrow"></i></div>
+			<div class="step-item f-left step-active"><i class="left-arrow"></i><span>3.完成</span><i class="right-arrow"></i></div>
+		</div>
+		<div class="guide-success">
+			<div class="success-info">初始化成功！</div>
+			<p>如需修改员工账号、添加更多的员工账号、添加部门、设置职务权限等，请点击下面的“进入系统”，选择“<a href="">系统设置</a>”进行设置。</p>
+		</div>
+		<div class="guide-submit"><a href="javascript:;" class="guide-btn">进入系统</a></div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/dialog-min.js"></script>
+	<script>
+		$(function() {
+			$('.step-item:last').css({'margin-right':0});
+			$('.fuide-row').find('.guide-span:last').css({'margin-right':0});
+
+			dialog({
+				title: "快速初始化",
+				content: $(".guide-step-wrap")
+			}).showModal();
+		});
+	</script>
+</body>
+</html>

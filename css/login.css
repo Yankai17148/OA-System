@@ -24,6 +24,7 @@
 	font-size: 24px;
 	color:#fff;
 	text-align: center;
+	background: url(../images/button.png) no-repeat 0px 0px;
 	background: -webkit-linear-gradient( top, #98d43d, #7fb62d, #98d43d );
 	background: -moz-linear-gradient( top, #98d43d, #7fb62d, #98d43d );
 	cursor: pointer;
@@ -31,14 +32,14 @@
 	box-shadow: 0px 1px 0px #a5c6c4;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
-	-ms-transition: all .3s;
 	-o-transition: all .3s;
-	transition: all .3s;
+	/*transition: all .3s;*/
 }
 #main_wrap .login-btn:active{
 	box-shadow: 0px 0px 0px #a5c6c4;
 }
 #main_wrap .login-btn:hover{
+	background: url(../images/button.png) no-repeat 0px -115px;
 	background: -webkit-linear-gradient( top, #ff9d3c, #ff7f01, #ff9d3c );
 	background: -moz-linear-gradient( top, #ff9d3c, #ff7f01, #ff9d3c );
 }
@@ -51,3 +52,6 @@
 .pass-step2 .email-address{color:#00a5ff;background-color: #fff;float: left;padding:2px 10px;}
 .pass-step2 .no-email{margin-top: 50px;}
 .pass-step2 p a{color:#ff9556;}
+
+.log-box .pw-tips{text-align: center;color:#fff;font-size: 16px;margin-top:35px;}
+.log-box .pw-tips a{color:#ff9556;}

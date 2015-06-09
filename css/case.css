@@ -1,0 +1,43 @@
+/*客户案例样式*/
+.case-banner{width: 100%;height:412px;background: url(../images/case-banner.jpg) no-repeat top center;}
+.case-banner h2,
+.case-banner p{padding-left: 90px;color:#fff;}
+.case-banner h2{padding-top: 140px;font-size: 40px;}
+.case-banner p{margin-top: 20px;line-height: 32px;font-size: 18px;}
+.case-wrap{width: 100%;background-color: #fbfbfb;}
+.case-wrap .container{padding:50px 10px;}
+.case-comment-box{margin-bottom: 17px;}
+.case-comment-box .case-avater-img{float: left;width:130px;height:130px;overflow: hidden;border-radius: 50%;}
+.case-comment-box .case-content{float: left;position: relative;padding:20px 35px;margin:45px 0 15px 40px;width:360px;background-color: #efefef;border-radius: 10px;}
+.case-comment-box .case-content::after{content:"";position: absolute;width:0;height:0;border-color:#efefef transparent transparent transparent;border-style:solid dashed dashed dashed;border-width:25px 30px;top:20px;left:-25px;}
+.case-comment-box .case-content p{font-size: 18px;color:#333;line-height: 30px;}
+.case-comment-box .case-content p.case-company{text-align: right;margin-top: 10px;}
+
+.case-comment-box .case-avater-img.case-right{float: right;}
+.case-comment-box .case-content.case-right{float: right;margin:45px 40px 15px 0;background-color: #f49078;}
+.case-comment-box .case-content.case-right::after{left:397px;border-color:#f49078 transparent transparent transparent;}
+.case-comment-box .case-content.case-right p{color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

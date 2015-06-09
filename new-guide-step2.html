@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>引导第二步</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/ui-dialog.css">
+	<link rel="stylesheet" href="css/activation.css">
+	
+	
+</head>
+<body>
+	<div class="guide-step-wrap">
+		<div class="step-bar clearfix">
+			<div class="step-item f-left step-active"><span>1.创建部门</span><i class="right-arrow"></i></div>
+			<div class="step-item f-left"><i class="left-arrow"></i><span>2.邀请同事</span><i class="right-arrow"></i></div>
+			<div class="step-item f-left"><i class="left-arrow"></i><span>3.完成</span><i class="right-arrow"></i></div>
+		</div>
+		<p class="guide-top-tips">建议您在这里快速创建1~5个公司部门，您也可以点击“<a href="">系统设置</a>”创建更完整的组织架构！</p>
+		<div class="guide-form">
+			<div class="gf-item"><input type="text" class="guide-text span1" placeholder="请输入部门名称"></div>
+			<div class="gf-item"><input type="text" class="guide-text span1" placeholder="请输入部门名称"></div>
+			<div class="gf-item"><input type="text" class="guide-text span1" placeholder="请输入部门名称"></div>
+			<div class="gf-item"><input type="text" class="guide-text span1" placeholder="请输入部门名称"></div>
+			<div class="gf-item"><input type="text" class="guide-text span1" placeholder="请输入部门名称"></div>
+		</div>
+		<div class="remark clearfix">
+			<div class="f-left">备注：</div>
+			<div class="f-left">如需修改或添加更多的部门，请点击“<a href="">系统设置</a>”进行完整初始化。</div>
+		</div>
+		<div class="guide-submit"><a href="javascript:;" class="guide-btn">下一步</a></div>
+	</div>
+	<div class="guide-warning clearfix">
+		<div class="warning-text">您还没有创建任何部门，建议您创建1~5个部门进行体验，是否创建？</div>
+		<div class="warning-control">
+			<a href="javascript:;" class="comfirm-btn f-left orange">是</a>
+			<a href="javascript:;" class="comfirm-btn f-left grey">否</a>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/dialog-min.js"></script>
+	<script>
+		$(function() {
+			$('.step-item:last').css({'margin-right':0});
+			dialog({
+				title: "快速初始化",
+				content: $(".guide-step-wrap")
+			}).showModal();
+			$('.guide-btn').on('click', function(){
+				dialog({
+					title: "系统提示",
+					content: $(".guide-warning")
+				}).show();
+			})
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>引导第三步</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/ui-dialog.css">
+	<link rel="stylesheet" href="css/activation.css">
+	
+	
+</head>
+<body>
+	<div class="guide-step-wrap">
+		<div class="step-bar clearfix">
+			<div class="step-item f-left"><span>1.创建部门</span><i class="right-arrow"></i></div>
+			<div class="step-item f-left step-active"><i class="left-arrow"></i><span>2.邀请同事</span><i class="right-arrow"></i></div>
+			<div class="step-item f-left"><i class="left-arrow"></i><span>3.完成</span><i class="right-arrow"></i></div>
+		</div>
+		<p class="guide-top-tips">建议您快速邀请1~5个员工，一起互动体验，您也可以点击“<a href="">系统设置</a>”添加更多员工账号！</p>
+		<div class="guide-form form-step3">
+			<div class="fuide-row clearfix title">
+				<div class="guide-span f-left">姓名</div>
+				<div class="guide-span f-left">邮箱</div>
+				<div class="guide-span f-left">部门</div>
+			</div>
+			<div class="fuide-row clearfix">
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="请输入员工姓名"></div>
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="作为登录账号使用"></div>
+				<div class="guide-span f-left">
+					<select name="" id="" class="select-text">
+						<option value="" selected>请选择部门</option>
+						<option value="">技术部</option>
+					</select>
+				</div>
+			</div>
+			<div class="fuide-row clearfix">
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="请输入员工姓名"></div>
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="作为登录账号使用"></div>
+				<div class="guide-span f-left">
+					<select name="" id="" class="select-text">
+						<option value="" selected>请选择部门</option>
+						<option value="">技术部</option>
+					</select>
+				</div>
+			</div>
+			<div class="fuide-row clearfix">
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="请输入员工姓名"></div>
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="作为登录账号使用"></div>
+				<div class="guide-span f-left">
+					<select name="" id="" class="select-text">
+						<option value="" selected>请选择部门</option>
+						<option value="">技术部</option>
+					</select>
+				</div>
+			</div>
+			<div class="fuide-row clearfix">
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="请输入员工姓名"></div>
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="作为登录账号使用"></div>
+				<div class="guide-span f-left">
+					<select name="" id="" class="select-text">
+						<option value="" selected>请选择部门</option>
+						<option value="">技术部</option>
+					</select>
+				</div>
+			</div>
+			<div class="fuide-row clearfix">
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="请输入员工姓名"></div>
+				<div class="guide-span f-left"><input type="text" class="guide-text" placeholder="作为登录账号使用"></div>
+				<div class="guide-span f-left">
+					<select name="" id="" class="select-text">
+						<option value="" selected>请选择部门</option>
+						<option value="">技术部</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="remark clearfix">
+			<div class="f-left">备注：</div>
+			<div class="f-left">
+				1.员工邮箱将接收到系统自动发送的登录账号和默认密码；<br>
+      				2.如需修改或添加更多的员工账号，请点击“<a href="">系统设置</a>”进行完整初始化。
+			</div>
+		</div>
+		<div class="guide-submit"><a href="javascript:;" class="guide-btn">下一步</a></div>
+	</div>
+	<div class="guide-warning clearfix">
+		<div class="warning-text">您还没有邀请任何员工，建议您邀请1~5个员工进行体验，是否邀请？</div>
+		<div class="warning-control">
+			<a href="javascript:;" class="comfirm-btn f-left orange">是</a>
+			<a href="javascript:;" class="comfirm-btn f-left grey">否</a>
+		</div>
+		
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/dialog-min.js"></script>
+	<script>
+		$(function() {
+			$('.step-item:last').css({'margin-right':0});
+			$('.fuide-row').find('.guide-span:last').css({'margin-right':0});
+
+			dialog({
+				title: "快速初始化",
+				content: $(".guide-step-wrap")
+			}).showModal();
+			$('.guide-btn').on('click', function(){
+				dialog({
+					title: "系统提示",
+					content: $(".guide-warning")
+				}).show();
+			})
+		});
+	</script>
+</body>
+</html>

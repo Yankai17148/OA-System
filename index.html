@@ -10,29 +10,7 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/index.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easings.min.js"></script>
-	<script src="js/jquery.slimscroll.min.js"></script>
-	<script src="js/jquery.fullPage.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				'verticalCentered': false,
-				'navigation': true,
-				'navigationPosition': 'right',
-				'navigationTooltips': ['首页', '功能优势', '客户案例', '安全保障','联系我们'],
-				"css3":true,
-				afterRender: function(){
-					$("#page1 h1").addClass('active');
-				},
-				afterLoad: function(anchorLink, index){
-					if (index == 2) {
-						$("#page2 h1").addClass('active');
-					};
-				}
-			});
-		});
-	</script>
+	<link rel="stylesheet" href="css/ui-dialog.css">
 </head>
 <body>
 	
@@ -41,7 +19,7 @@
 			<header>
 				<div class="container clearfix">
 					<div id="logo">
-						<a href=""><img src="images/logo.gif" alt=""></a>
+						<a href=""><img src="images/logo.png" alt=""></a>
 					</div>
 					<div class="top_nav">
 						<span>热线电话：<em>0354-3237474 </em></span>
@@ -52,14 +30,321 @@
 				</div>
 			</header>
 			<div class="container page1-wrap">
-				<h1 class="oa-big-title">骑士OA系统</h1>
+				<h1 class="oa-big-title">轻云办公系统</h1>
 				<p class="oa-content-txt">帮你梳理所有要做的事，随时记录、实时跟踪、适时计划，给大脑减轻负担让你轻装上阵，专注眼前、忙而不乱</p>
+				<h2 class="page1-title">“卸荷减负”，摆脱杂事束缚</h2>
+				<div class="page1-reg-wrap">
+					<form action="">
+						<div class="reg-input"><input type="text" placeholder="请输入邮箱地址注册......." autocomplate="off"></div>
+						<div class="reg-submit"><input type="submit" value=""></div>
+					</form>
+				</div>
 			</div>
 		</div>
-		<div class="section" id="page2">Some section<h1>222</h1></div>
-		<div class="section" id="page3">Some section</div>
-		<div class="section" id="page4">Some section</div>
-		<div class="section" id="page5">Some section</div>
+		<div class="section" id="page2">
+			<div class="container page2-wrap">
+				<div class="page-top-box">
+					<h2>功能优势</h2>
+					<p class="english">Function is introduced</p>
+					<p class="page-top-content">我们了解大中小型企业的生意模式，需求，我们倡导让客户感知产品的应用体验价值，而不仅是产品的功能</p>
+				</div>
+				<div class="page-function">
+					<div class="function-row clearfix" id="row1">
+						<div class="function-item">
+							<div class="function-icon icon1"></div>
+							<p>任务安排</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>团队事务由谁来做？</p>
+									<p>进展如何？</p>
+									<p>分配任务，责任到人</p>
+									<p>计划做事，有条不紊</p>
+									<p>设置提醒，避免忘事</p>
+									<p>记录进展，完全把控</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon2"></div>
+							<p>事务审批</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>还因为Boss不在公司，</p>
+									<p>审批被卡住了吗？</p>
+									<p>自由模版，业务全覆盖</p>
+									<p>自由流转，送审更灵活</p>
+									<p>设置提醒，避免忘事</p>
+									<p>移动审批，审批无堵点</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon3"></div>
+							<p>企业文档</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>企业文件太多，查找如大海捞针？</p>
+									<p>集中储存，文件夹分类管理</p>
+									<p>安全可控，按权限查看文件</p>
+									<p>快速定位，文件标星与检索</p>
+									<p>在线阅文，无需下载直接看</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon4"></div>
+							<p>日程</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>稍不留神就忽略重要事情？</p>
+									<p>日程式查看事情，一目了然</p>
+									<p>私人定制计划表，井井有条</p>
+									<p>直接安排大小事，方便快捷</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon5"></div>
+							<p>考勤</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>按部门分组</p>
+									<p>无需手动录入，自动加载</p>
+									<p>随时查找员工的联系方式</p>
+									<p>可根据需要创建工作群组</p>
+									<p>联系不中断，沟通更高效</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="function-row clearfix" id="row2">
+						<div class="function-item">
+							<div class="function-icon icon6"></div>
+							<p>通讯录</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>是否可以随时关注公司动态？</p>
+									<p>全面掌握工作动态、业务数据、即时消息</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon7"></div>
+							<p>公告</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>外勤人员无法有效监控？</p>
+									<p>企业员工，统一管理</p>
+									<p>手机打卡，告别排队</p>
+									<p>考勤统计，轻松知晓</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon8"></div>
+							<p>移动办公</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>移动办公离开办公室，出差在外就无法办公了？</p>
+									<p>你在哪里那里就是办公室</p>
+									<p>IOS，Android多平台支持</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon9"></div>
+							<p>客户</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>完整记录所有客户资料及联系情况，永不丢失</p>
+									<p>快速查询，客户状态及跟进情况一目了然</p>
+								</div>
+							</div>
+						</div>
+						<div class="function-item">
+							<div class="function-icon icon10"></div>
+							<p>消息提醒</p>
+							<div class="fucntion-content">
+								<div class="f-content-wrap">
+									<p>不在电脑前就无法接收通知了？</p>
+									<p>及时提醒，无需等待</p>
+									<p>设置提醒，避免忘事</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="page3">
+			<div class="container page3-wrap">
+				<div class="page-top-box">
+					<h2>客户案例</h2>
+					<p class="english">Customer case</p>
+					<p class="page-top-content">60000家企业用户的共同选择,用户就是上帝！每个核心功能都由您来</p>
+				</div>
+				<div class="customer-wrap">
+					<div class="customer-item position1 clearfix onPos">
+						<div class="avater avater-type1"></div>
+						<div class="c-content">
+							<p>自从使用之后，工作再也没有死角了，工作都可以全覆盖。</p>
+							<p class="content-right-text">——远信科技</p>
+						</div>
+					</div>
+					<div class="customer-item position2" onclick="location.href='login.html'">
+						<div class="c-content-r">
+							<p>轻云太给力了，直观的体现了我的工作量，让我工作不再被无视，老板再也不用担心我的工作了。</p>
+							<p class="content-right-text">——时代科技</p>
+						</div>
+						<div class="avater avater-type2"></div>
+					</div>
+					<div class="customer-item position3">
+						<div class="avater avater-type3"></div>
+						<div class="c-content">
+							<p>使公司多部门之间有效协作，沟通顺畅，保证了工程的顺利开展。</p>
+							<p class="content-right-text">——升泰地产</p>
+						</div>
+					</div>
+					<div class="customer-item position4">
+						<div class="c-content-r">
+							<p>经常出差在外，用了轻云，随时随地办公，消息及时推送，工作和审批再也不“卡槽”了，很方便的一个办公软件。</p>
+							<p class="content-right-text">——建安地产</p>
+						</div>
+						<div class="avater avater-type4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="page4">
+			<div class="container page4-wrap">
+				<div class="page-top-box">
+					<h2>安全保障</h2>
+					<p class="english">Security statement</p>
+					<p class="page-top-content">信息安全是我们的生命线,我们正竭尽全力全方位保护用户的数据安全</p>
+				</div>
+				<div class="security-wrap clearfix">
+					<div class="sec-item" id="securityAction1" onclick="location.href='login.html'">
+						<div class="sec-icon s-icon1"></div>
+						<div class="sec-title">基础安全</div>
+						<p>安全团队7 x 24小时待命</p>
+					</div>
+					<div class="sec-item" id="securityAction2">
+						<div class="sec-icon s-icon2"></div>
+						<div class="sec-title">数据安全</div>
+						<p>企业数据隔离存放</p>
+					</div>
+					<div class="sec-item" id="securityAction3">
+						<div class="sec-icon s-icon3"></div>
+						<div class="sec-title">传输安全</div>
+						<p>银行级信息加密连接</p>
+					</div>
+					<div class="sec-item" id="securityAction4">
+						<div class="sec-icon s-icon4"></div>
+						<div class="sec-title">密码安全</div>
+						<p>密码强度自动判断</p>
+					</div>
+				</div>
+				<div class="sec-reg">
+					<h3>轻云办公系统，开启中小微企业大协作时代</h3>
+					<div class="sec-reg-wrap clearfix">
+						<div class="s-reg-input"><input type="text" placeholder="请输入邮箱地址注册......"></div>
+						<div class="s-reg-btn"><input type="button" value="免费注册"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="page5">
+			<div class="container page5-wrap">
+				<div class="page-top-box">
+					<h2>联系我们</h2>
+					<p class="english">Contact us</p>
+					<p class="page-top-content">欢迎联系我们，我们期待与您详细的沟通 </p>
+				</div>
+				<div class="conract-wrap clearfix">
+					<div class="paper-wrap">
+						<div class="paper-item mail-box"><span class="type">电子邮件：</span><span class="paper-content">13964876276@163.com</span></div>
+						<div class="paper-item phone-box">
+							<span class="type left-type">电话：</span>
+							<div class="p-right"><p>0354-5507474</p><p>0354-3987474</p><p>0354-3937474</p><p>0354-3237474</p></div>
+						</div>
+						<div class="paper-item qq-box"><span class="type">QQ在线交谈：</span><span class="paper-content">613961360</span></div>
+					</div>
+					<div class="contact-form">
+						<h4>在线提交建议</h4>
+						<div class="text-item clearfix">
+							<div class="c-text"><input type="text" placeholder="姓名"></div>
+							<div class="c-text"><input type="text" placeholder="邮箱"></div>
+						</div>
+						<div class="text-item clearfix">
+							<div class="c-text"><input type="text" placeholder="电话"></div>
+							<div class="c-text"><input type="text" placeholder="公司名称"></div>
+						</div>
+						<div class="text-item">
+							<textarea name="" id="" cols="30" rows="10" placeholder="您的建议"></textarea>
+						</div>
+						<div class="text-item clearfix">
+							<div class="c-button"><input type="submit" value="提交建议"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer id="index-footer">
+				<div class="container footer-wrap clearfix">
+					<div class="footer-box product-box">
+						<h2>产品站点</h2>
+						<ul>
+							<li><a href="">骑士OA系统</a></li>
+							<li><a href="">骑士人才系统</a></li>
+							<li><a href="">骑士猎头系统</a></li>
+							<li><a href="">骑士官网</a></li>
+						</ul>
+					</div>
+					<div class="footer-box about-box">
+						<h2>关于我们</h2>
+						<ul>
+							<li><a href="">安全声明</a></li>
+							<li><a href="">服务条款</a></li>
+						</ul>
+					</div>
+					<div class="footer-box comment-box">
+						<h2>联系我们</h2>
+						<div class="comment-phone">0354-3237474 </div>
+						<div class="comment-email">service@74cms.com</div>
+					</div>
+					<div class="footer-box wx-box">
+						<div class="wx">
+							<h2>官方微信</h2>
+							<div><img src="images/wx.jpg" alt="二维码"></div>
+						</div>
+					</div>
+				</div>
+				<div class="coptright">
+					Copyright©2011 74cms.com All Right Reserved   苏ICP备11027010号-1 
+				</div>
+			</footer>
+		</div>
 	</div>
+	<div class="reg-dialog" style="display:none;">
+		<div class="reg-success">
+			<p>邮箱发送成功，请前往邮箱并激活企业。</p>
+			<a href="" class="activation">立即激活</a>
+		</div>
+	</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/dialog-min.js"></script>
+	<script>
+		$(function() {
+			dialog({
+				title: "提示信息",
+				content: $(".reg-dialog")
+			}).showModal();
+		});
+	</script>
 </body>
 </html>

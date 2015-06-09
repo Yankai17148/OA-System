@@ -5,32 +5,14 @@
 	<meta name="renderer" content="webkit"> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>注册</title>
+	<title>在线体验</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/experience.css">
 	<script src="js/jquery.min.js"></script>
 	<script>
 		$(function() {
-			$(".log-block input").focus(function() {
-				$(this).parent().find(".tips").stop().fadeIn('fast');
-			});
-			$(".log-block input").blur(function() {
-				$(this).parent().find(".tips").stop().fadeOut('fast');
-				if ($(this).val() == "") {
-					$(this).parent().find(".error-info").html("邮箱不能为空").show();
-				}else{
-					$(this).parent().find(".error-info").hide();
-				}
-			});
-			$("#regForm").submit(function(){
-				var eMail = $("#email");
-				if (eMail.val() == "") {
-					$(this).parent().find(".error-info").html("邮箱不能为空").show();
-					eMail.focus();
-					return false;
-				};
-			})
+			
 		});
 	</script>
 </head>
@@ -42,26 +24,32 @@
 			</div>
 			<nav class="top_nav">
 				<span>热线电话：<em>0354-3237474 </em></span>
+				<div class="top-mail-box"><input type="text" placeholder="请输入您的邮箱"></div>
 				<a href="" class="top_btn orange">免费注册</a>
+				<a href="" class="top_btn blue">登录</a>
 				<a href="" class="top_btn green">在线体验</a>
 			</nav>
 		</div>
 	</header>
-	<div id="main_wrap">
-		<div class="log-box">
-			<h1 class="title">Hi!欢迎注册账户</h1>
-			<form action="" id="regForm">
-				<div class="log-block user">
-					<input type="text" placeholder="请输入您的邮箱" id="email">
-					<div class="error-info">邮箱格式不正确，请重新输入</div>
-					<div class="tips">请输入正确的邮箱格式</div>
-				</div>
-				<p class="forget-password"><a href="">忘记密码？</a></p>
-				<div class="submit-box"><input type="submit" value="注册" class="login-btn"></div>
-				<div class="no-account">已有账号，<a href="">立即登录</a></div>
-			</form>
+	<!-- 在线体验 -->
+	<div class="experience-wrap">
+		<div class="experience-top">
+			<h1>不是所有的办公软件都有勇气<span>提供体验</span></h1>
+			<h2>But,we can!</h2>
 		</div>
+		<div class="experience-main">
+			<h3>在线体验</h3>
+			<p class="experience-title">体验账号1：</p>
+			<div class="e-account">用户名：user1@qwert.com    密码：qwert</div>
+			<p class="experience-title">体验账号1：</p>
+			<div class="e-account">用户名：user1@qwert.com    密码：qwert</div>
+			<p class="experience-title">体验方式：</p>
+			<div class="e-account">登陆体验，<a href="">点击登录</a></div>
+		</div>
+		<p class="e-tips">通过在线体验，请提供建议，让我们更好的交流！</p>
+		<div style="height:200px;"></div>
 	</div>
+	<!-- 在线体验结束 -->
 
 	<footer>
 		<div class="container footer-wrap clearfix">

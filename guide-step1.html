@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>引导页1</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/activation.css">
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.guide-wrap').height($(window).height());
+			$(window).resize(function(){
+				$('.guide-wrap').height($(window).height());
+			});
+			$('.drop-icon').on('click', function(){
+				$(this).toggleClass('in');
+				$(this).parents('li').find('ul').stop().slideToggle('fast');
+			})
+			$('.edit').on('click', function(){
+				var defaultVal = $(this).parent().prev('.department-block').find('.de-name').text();
+				$(this).parent().prev('.department-block').find('.de-name').hide().siblings('.de-edit').show().find('input').val(defaultVal).focus();
+				textBlurAction();
+			})
+			function textBlurAction(){
+				var editInput = $('.de-edit input');
+				editInput.siblings('.de-error').hide();
+				editInput.blur(function(){
+					if ($(this).val() != '') {
+						$(this).parent().hide().siblings('.de-name').show().html($(this).val());
+					}else{
+						$(this).siblings('.de-error').show();
+					};
+				})
+			};
+		});
+	</script>
+</head>
+<body>
+	<div class="guide-wrap guide-page1">
+		<div class="guide-title title1"></div>
+		<div class="guide-create-wrap">
+			<div class="company-block clearfix de-block">
+				<div class="department-block">
+					<div class="de-name">安远科技有限公司</div>
+					<div class="de-edit clearfix"><input type="text" placeholder="请输入公司名称"><span class="de-error">请输入公司名称</span></div>
+				</div>
+				<div class="de-control">
+					<a href="javascript:;" class="control-icon add" title="添加部门"></a>
+					<a href="javascript:;" class="control-icon edit" title="编辑"></a>
+				</div>
+			</div>
+			<ul class="level-box level2">
+				<li>
+					<div class="de-block level-son-2 clearfix">
+						<div class="department-block">
+							<div class="de-name"><i class="drop-icon"></i>策划部</div>
+							<div class="de-edit clearfix"><input type="text" placeholder="请输入公司名称"><span class="de-error">请输入公司名称</span></div>
+						</div>
+						<div class="de-control">
+							<a href="javascript:;" class="control-icon add" title="添加部门"></a>
+							<a href="javascript:;" class="control-icon edit" title="编辑"></a>
+							<a href="" class="control-icon del"></a>
+						</div>
+					</div>
+					<ul class="level-box level3">
+						<div class="de-block level-son-3 clearfix">
+						<div class="department-block">
+							<div class="de-name">策划小部</div>
+							<div class="de-edit clearfix"><input type="text" placeholder="请输入公司名称"><span class="de-error">请输入公司名称</span></div>
+						</div>
+						<div class="de-control">
+							<a href="javascript:;" class="control-icon add" title="添加部门"></a>
+							<a href="javascript:;" class="control-icon edit" title="编辑"></a>
+							<a href="" class="control-icon del"></a>
+						</div>
+					</div>
+					</ul>
+				</li>
+				<li>
+					<div class="de-block level-son-2 clearfix">
+						<div class="department-block">
+							<div class="de-name"><i class="drop-icon"></i>策划部</div>
+							<div class="de-edit clearfix"><input type="text" placeholder="请输入公司名称"><span class="de-error">请输入公司名称</span></div>
+						</div>
+						<div class="de-control">
+							<a href="javascript:;" class="control-icon add" title="添加部门"></a>
+							<a href="javascript:;" class="control-icon edit" title="编辑"></a>
+							<a href="" class="control-icon del"></a>
+						</div>
+					</div>
+					<ul class="level-box level3">
+						<div class="de-block level-son-3 clearfix">
+							<div class="department-block">
+								<div class="de-name">策划小部</div>
+								<div class="de-edit clearfix"><input type="text" placeholder="请输入公司名称"><span class="de-error">请输入公司名称</span></div>
+							</div>
+							<div class="de-control">
+								<a href="javascript:;" class="control-icon add" title="添加部门"></a>
+								<a href="javascript:;" class="control-icon edit" title="编辑"></a>
+								<a href="" class="control-icon del"></a>
+							</div>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<div class="de-block level-son-2 clearfix">
+						<div class="department-block">
+							<div class="de-name"><i class="drop-icon"></i>策划部</div>
+							<div class="de-edit clearfix"><input type="text" placeholder="请输入公司名称"><span class="de-error">请输入公司名称</span></div>
+						</div>
+						<div class="de-control">
+							<a href="javascript:;" class="control-icon add" title="添加部门"></a>
+							<a href="javascript:;" class="control-icon edit" title="编辑"></a>
+							<a href="" class="control-icon del"></a>
+						</div>
+					</div>
+					<ul class="level-box level3">
+						
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<a href="" class="guide-submit-btn">OK,搞定!</a>
+		<div class="guide-step-tip step-tip1">
+			<div class="step-txt"><a href="">跳过这一步>></a></div>
+		</div>
+	</div>
+</body>
+</html>
